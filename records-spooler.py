@@ -5,7 +5,7 @@ import psycopg2
 
 try:
 	print "Hello world!\nOpenning database connection...\n"
-	connection = psycopg2.connect(user="skfjkefjkwe",password="sdfjskd",host="localhost",port="5432")
+	connection = psycopg2.connect(user="mobitext",password="mobitext",host="localhost",port="5432")
 	cursor = connection.cursor()
 	cursor.execute("SELECT * FROM ORGANIZATIONS")
 	rows=cursor.fetchall()
