@@ -57,8 +57,6 @@ try:
 		stdout, stderr = outP.communicate()
 		success = None == stderr
 		
-		# print("Copy command executed with return: %s for task ID %s" % (status, task_id))
-
 		if (success):
 			print "COPY successful. %s Zipping file %s.csv ..." % (stdout, task_id)
 			os.chdir(report_dir)
