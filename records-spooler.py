@@ -66,7 +66,7 @@ try:
 			# Update row to mark export as done [Errno 9] Bad file descriptor
 			results = cursor.execute("UPDATE bulksmstasks SET report_file='%s/%s.zip' WHERE task_id=%s" % (report_dir, task_id, task_id))
 			connection.commit()
-			print("%s Affected rows on UPDATE " % results)
+			print("Task  UPDATED ")
 		else:
 			print "COPY failed. %s"	 % stderr
 except Exception, e:
